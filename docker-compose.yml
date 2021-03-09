@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  tomita:
+    image: nlpub/tomita
+    container_name: tomita
+    ports:
+      - "85:85"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./input:/tomita/socialfinder/input
+
+  malt_parser:
+    image: nlpub/maltparser
+    container_name: maltParser
+    ports:
+      - "86:86"
+    tty: true

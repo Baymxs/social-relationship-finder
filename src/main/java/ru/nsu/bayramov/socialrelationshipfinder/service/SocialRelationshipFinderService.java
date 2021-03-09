@@ -14,8 +14,9 @@ public class SocialRelationshipFinderService {
         uploadFile(file);
     }
 
-
     private void uploadFile(MultipartFile file) throws IOException {
+        File folder = new File("input");
+        folder.mkdir();
         file.transferTo(new File("input/" + file.getOriginalFilename()));
     }
 }
