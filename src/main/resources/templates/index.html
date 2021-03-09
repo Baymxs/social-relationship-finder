@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Finder</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <form method="POST" action="/api/v1/social-relationship-finder/" enctype="multipart/form-data">
+            <h1>Social Relationship Finder</h1>
+            <table>
+                <tr>
+                    <td><label path="file">Select a file to upload</label></td>
+                    <td><input type="file" name="file"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
